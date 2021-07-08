@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEI LA</title>
+  <style>
+    body {
+      background: rgb(87, 87, 87);
+      color: white;
+      font-family: Helvetica;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>SEI LA</h1>
+
+  <div id="res"></div>
+
+  <div> 
+    <button onclick="sete()">7</button>
+    <button onclick="oito()">8</button>
+    <button onclick="nove()">9</button>
+  </div>
+
+  <div>
+    <button onclick="quatro()">4</button>
+    <button onclick="cinco()">5</button>
+    <button onclick="seis()">6</button>
+  </div>
+
+  <div>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+  </div>
+
+  <div>
+    <button onclick="resultado()">=</button>
+    <button onclick="multiplicar()">x</button>
+    <button onclick="somar()">+</button>
+  </div>
+
+  <script>
+    var res = document.getElementById('res')
+    
+
+
+
+    function sete() {
+      res.innerHTML += 7
+    }
+
+    function oito() {
+      res.innerHTML += 8
+    }
+
+    function nove() {
+      res.innerHTML += 9
+    }
+
+
+    function somar() {
+      var simboloSoma = '+'
+      res.innerHTML += `${simboloSoma}`
+    }
+
+    function resultado() {
+      var resultadoTxt = res
+      
+      res.innerHTML = `${r}`
+    }
+
+  </script>
+</body>
+</html>
